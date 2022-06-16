@@ -1,0 +1,106 @@
+* {
+    margin: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&family=Sahitya&family=Tillana&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+} 
+
+
+/* home section*/
+
+.home, .Intro, .help {
+    background-color: #D5ECED;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+    gap: 2rem;
+}
+
+.hana {
+    width: 15rem;
+}
+
+.homepageimg {
+    width: 60%;
+}
+
+/* home section*/
+
+/* Intro Section */
+
+.Intro {
+    background-color: #FFF;
+}
+
+.Introtext {
+    text-align: center;
+    width: 18rem;
+
+}
+
+.border {
+    border-top: 8px dotted #D5ECED;
+    height: 1px;
+    width: 8rem;
+    margin-top: 0.75rem;
+}
+
+.Software {
+    width: 15rem;
+    object-fit: cover;
+}
+
+
+.skills {
+    display: flex;
+    width: 40%;
+    gap: 5rem;
+}
+
+.skills2 {
+    flex-direction: row-reverse;
+}
+
+/* Intro Section End */
+
+/* Help Section */
+
+.help {
+    background-color: #FFF;
+    width: 18rem;
+    margin: auto;
+    text-align: center;
+}
+
+/* Help Section Ends */
+
+/* Font css section */
+
+.subheading {
+    font-size: 1.3rem;
+    color: #5BAEB2;
+    font-weight: 400;
+}
+
+.Superheading {
+    font-size: 3rem;
+    font-weight: 400;
+    color: #5BAEB2;
+}
+
+
+
+.profile {
+    width: 200px;
+}
+
+.heading {
+    font-weight: 600;
+    color: #5BAEB2;  
+}
+

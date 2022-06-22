@@ -11,7 +11,7 @@ body {
 
 /* home section*/
 
-.home, .Intro, .help {
+.home, .Intro, .help, .footer {
     background-color: #D5ECED;
     display: flex;
     justify-content: center;
@@ -52,7 +52,7 @@ body {
 
 .Software {
     width: 15rem;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 
@@ -72,14 +72,92 @@ body {
 
 .help {
     background-color: #FFF;
-    width: 18rem;
     margin: auto;
     text-align: center;
 }
 
+.help div {
+    width: 18rem;
+}
+
+.btn {
+    padding: 0.5rem 5rem;
+    background-color: #76c9ce;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    border-radius: 5px;   
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #7dd7db;
+    color:#FFF;
+
+}
+
 /* Help Section Ends */
 
+/* Footer Section */
+
+.footer {
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.fpd {
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+
+}
+
+.text1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.text1 a {
+    color:#27969c;
+    text-decoration: none;
+}
+
+.text1 a:hover {
+    color:#0e4b4e;
+}
+
+.logolinks:hover ~ .logolinks svg {
+    fill:#0e4b4e;
+}
+
+.logolinks {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logolinks svg {
+    width: 0.75rem;
+    fill:#27969c;
+}
+
+.icons {
+    width: 1rem;
+}
+
+
+.logo {
+    width: 15rem;
+    object-fit: contain;
+}
+
+/* Footer Section Ends */
+
 /* Font css section */
+
 
 .subheading {
     font-size: 1.3rem;
@@ -93,8 +171,6 @@ body {
     color: #5BAEB2;
 }
 
-
-
 .profile {
     width: 200px;
 }
@@ -104,3 +180,53 @@ body {
     color: #5BAEB2;  
 }
 
+/* Responsiveness Code */
+
+@media only screen and (max-width: 1600px) {
+    .Software {
+        width: 10rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .skills {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .fpd {
+        align-items: center;
+    }
+
+    .logo {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .Software {
+        width: 13rem;
+    }
+    .skills {
+        width: 70%;
+    }
+    .Superheading {
+        font-size: 2rem;
+    }
+    .fpd {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footer {
+        padding: 2rem;
+    }
+}
+
+/* Resposiveness Code Ends */
